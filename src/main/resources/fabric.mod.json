@@ -1,38 +1,33 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "glowing-potato",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Glowing Potato",
+  "description": "Stops glow berries from ticking below Y=128.",
   "authors": [
-    "Me!"
+    "apple502j"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/apple502j/glowing-potato"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "LGPL-3.0",
+  "icon": "assets/glowing-potato/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "io.github.apple502j.glowingpotato.GlowingPotatoMod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "glowing-potato.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.11.3",
-    "fabric": "*",
     "minecraft": "1.17.x",
     "java": ">=16"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
